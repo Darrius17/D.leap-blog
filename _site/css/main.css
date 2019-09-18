@@ -95,6 +95,21 @@ h2 ~ p {
 }
 
 /* HEADER STYLES */
+
+
+.boop {
+  text-align: left;
+  display: inline-block;
+  color: #aaa;
+}
+
+.boop2{
+float: right;
+display: inline-block;
+color:#fff;
+text-transform: uppercase;
+}
+
 .header {
   background-color: #000;
   color: #fff;
@@ -321,11 +336,20 @@ h2 ~ p {
 }
 
 /* HERO STYLES */
-.full-hero {
-  background-color: #c7dbfc;
+
+.image1 {
+  filter:blur(1.5px);
+}
+
+.full-hero{
+  background-color: black;
   background-size: cover;
   box-sizing: border-box;
   height: 90vh;
+  background-position: cover;
+  background-image: url(/images/kitchen.jpg);
+
+
 }
 .full-hero:after {
   border: 10px solid;
@@ -339,10 +363,16 @@ h2 ~ p {
   transform: translate(-50%, 0);
   width: 0;
 }
-.hero-home {
-  background-image: url(/images/shark.jpg);
-  background-position: center top;
-}
+
+
+ /* .hero-home {
+background-image: url(/images/kitchen.jpg);
+background-position: cover;
+filter:blur(1.5px);  */
+
+
+
+
 .hero-content {
   color: #fff;
   position: relative;
@@ -352,8 +382,9 @@ h2 ~ p {
   transform: translate(0, -50%);
 }
 .hero-content h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 7vw;
+  color: white;
+  font-size: 4vw;
+  font-weight:bolder;
   margin-bottom: 0.25em;
 }
 .hero-content .social-link {
@@ -715,8 +746,3 @@ h2 ~ p {
     display: none;
   }
 }
-
-
-
-
-
